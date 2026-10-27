@@ -8,7 +8,7 @@ An enhanced implementation and comparative study of **CPU Scheduling Algorithms*
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 CPU scheduling is a fundamental operating system mechanism that controls the allocation of CPU resources among competing processes. The primary objectives are to optimize CPU utilization, throughput, turnaround time, waiting time, and response time while ensuring fairness.
 
@@ -16,7 +16,7 @@ While traditional **Round Robin (RR)** is widely adopted in time-sharing operati
 - **Small Time Quantum:** Leads to excessive context switching and high system overhead.
 - **Large Time Quantum:** Degenerates towards First-Come, First-Served (FCFS), leading to increased waiting and response times for shorter tasks.
 
-### 💡 The Proposed Solution: Adaptive Round Robin
+### The Proposed Solution: Adaptive Round Robin
 
 The **Modified Adaptive Round Robin** algorithm dynamically adapts the time quantum based on process characteristics. By evaluating the average CPU burst time ($\text{avgBurst}$) of incoming tasks:
 - **Short Processes ($\text{Burst} \le \text{avgBurst}$):** Assigned a tighter time quantum ($TQ = 4$) to finish rapidly, boosting system responsiveness.
@@ -24,7 +24,7 @@ The **Modified Adaptive Round Robin** algorithm dynamically adapts the time quan
 
 ---
 
-## 🚀 Key Features & Algorithm Comparison
+## Key Features & Algorithm Comparison
 
 | Feature | Standard Round Robin | Modified Adaptive Round Robin |
 | :--- | :--- | :--- |
@@ -37,7 +37,7 @@ The **Modified Adaptive Round Robin** algorithm dynamically adapts the time quan
 
 ---
 
-## 📊 Benchmark & Performance Evaluation
+## Benchmark & Performance Evaluation
 
 Using a standardized benchmark workload of 4 processes with varying burst requirements:
 
@@ -61,7 +61,7 @@ Using a standardized benchmark workload of 4 processes with varying burst requir
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 ├── Modified_Adaptive_Round_Robin.c   # Implementation of Adaptive Round Robin (Dynamic TQ)
@@ -72,7 +72,7 @@ Using a standardized benchmark workload of 4 processes with varying burst requir
 
 ---
 
-## 🛠️ Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -127,7 +127,7 @@ Average Turnaround Time = 13.50
 
 ---
 
-## ⚖️ Trade-offs & Discussion
+## Trade-offs & Discussion
 
 - **Benefits:**
   - Lower average waiting and turnaround times.
@@ -139,6 +139,6 @@ Average Turnaround Time = 13.50
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
