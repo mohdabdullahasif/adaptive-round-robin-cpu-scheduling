@@ -1,0 +1,14 @@
+# Compiled Object files
+*.o
+*.obj
+
+# Compiled Executables
+*.exe
+*.out
+*.app
+
+# Debugging and IDE files
+.vscode/
+.idea/
+*.swp
+*.log
